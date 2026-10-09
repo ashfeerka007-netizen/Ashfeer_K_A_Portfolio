@@ -24,7 +24,7 @@ export default function App() {
       try {
         const parsed = JSON.parse(saved);
         if (parsed.profile && parsed.profile.email === "ashfeerka@gmail.com" && parsed.profile.githubUsername === "ashfeerka007-netizen") {
-          if (parsed.profile.avatarUrl?.includes('unsplash.com')) {
+          if (parsed.profile.avatarUrl?.includes('unsplash.com') || parsed.profile.avatarUrl === '/profile.jpg') {
             parsed.profile.avatarUrl = initialPortfolioConfig.profile.avatarUrl;
           }
           return parsed;

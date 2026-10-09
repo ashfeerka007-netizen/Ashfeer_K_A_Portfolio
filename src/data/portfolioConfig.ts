@@ -17,7 +17,7 @@ export const initialPortfolioConfig: PortfolioConfig = {
     githubUsername: "ashfeerka007-netizen",
     githubUrl: "https://github.com/ashfeerka007-netizen",
     linkedinUrl: "https://linkedin.com/in/ashfeerka",
-    avatarUrl: "/profile.jpg",
+    avatarUrl: `${import.meta.env.BASE_URL || '/'}profile.jpg`.replace('//', '/'),
     summary: "Accomplished Accounting and Administrative Professional with 11 years of dedicated expertise in bookkeeping, ledger reconciliation, accounts payable/receivable, audit compliance, and clerical operations at Wayanad District Police Co-operative Society Ltd. Combines deep financial domain mastery with cutting-edge software development skills—utilizing Vibe Coding, Google AI Studio, Antigravity, and Android Studio to build automated accounting tools, digital ledger utilities, and modern enterprise applications.",
     yearsOfExperience: 11,
     projectsCompleted: 50,
