@@ -245,4 +245,55 @@ html.light textarea::placeholder {
   color: #94a3b8 !important;
 }
 
+/* PRINT & PDF EXPORT STYLES */
+@media print {
+  @page {
+    margin: 12mm 15mm;
+    size: A4 portrait;
+  }
+  
+  body, html {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+  }
+  
+  header, footer, nav, #home, #about, #experience, #skills, #projects, #software-portfolio, #github, #education, #contact,
+  #resume-toolbar, #back-to-top-btn, .no-print, [role="dialog"] {
+    display: none !important;
+  }
+  
+  #resume {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+  }
+  
+  #resume-printable {
+    display: block !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .print-text-dark {
+    color: #0f172a !important;
+  }
+
+  .print-text-blue {
+    color: #1d4ed8 !important;
+  }
+
+  .print-border {
+    border-color: #cbd5e1 !important;
+  }
+}
+
+
 

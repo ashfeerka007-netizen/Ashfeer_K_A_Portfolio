@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ profile, onOpenResume, onNavigateSec
                 className="px-6 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 text-white shadow-xl shadow-blue-600/25 hover:shadow-blue-600/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2"
               >
                 <Download className="w-4 h-4" />
-                <span>View & Download Resume</span>
+                <span>View & Download Resume (PDF / DOCX)</span>
               </button>
 
               <button
